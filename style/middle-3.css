@@ -1,0 +1,101 @@
+
+.middle-3{
+    position: relative;
+    top: 430px;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-3_row-1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row-1__title p, .row-1__title p span{
+    font-family: Craftwork Grotesk;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.row-1__title p span{
+    background: linear-gradient(180deg, #625FF4 0%, #625FF8 100%),
+    linear-gradient(0deg, #7a5959, #FFFFFF);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.row-1__under-title p{
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6C7080;
+    position: relative;
+    top: 30px;
+}
+
+.middle-3_row-2, .middle-3_row-2 .column-n_row-2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.middle-3 .middle-3_row-2 .column{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.middle-3 .middle-3_row-2{
+    top: 90px;
+    justify-content: space-around;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.middle-3_row-2 .column{
+    padding-left: 250px;
+    width: 300px;
+    height: 180px;
+    padding: 32px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 24px;
+    background: linear-gradient(0deg, #0C0D10, #0C0D10),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
+    border: 1px solid #FFFFFF1F
+}
+
+.middle-3_row-2 .column .column-n_row-2 img{
+    width: 48px;
+    height: 48px;
+    transform: scale(1.6);
+}
+
+.middle-3_row-2 .column .column-n_row-2 p{
+    font-family: Proxima Nova;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.column-1_row-1 .value{
+    font-family: Craftwork Grotesk;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 115px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+}

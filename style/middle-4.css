@@ -1,0 +1,148 @@
+
+.middle-4{
+    position: relative;
+    top: 730px;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-4_row-1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.middle-4_row-2, .middle-4_row-3{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+
+    top: 90px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.middle-4_row-3{
+    top: 120px;
+}
+
+.crypto-block{
+    width: 435px;
+    height: 255px;
+    padding: 32px;
+    border-radius: 8px;
+    border: 1px;
+    background: linear-gradient(0deg, #0C0D10, #0C0D10),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
+    border: 1px solid #FFFFFF1F;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+/* -----------------------crypto-block_row-1----------------------- */
+
+.crypto-block .row-1{
+    display: flex;
+    flex-direction: row;
+    width: 446px;
+    height: 29px;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+.crypto-block .row-1 .currency-name{
+    font-family: Craftwork Grotesk;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.crypto-block .row-1 img{
+    width: 24px;
+    height: 24px;
+    padding: 3.85px, 3.27px, 3.85px, 3.27px;
+}
+
+.crypto-block .row-1 .currency-name-2{
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/* -----------------------crypto-block_row-2----------------------- */
+
+.crypto-block .row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.crypto-block .star-block{
+    display: flex;
+    flex-direction: row;
+    width: 169px;
+    height: 43px;
+    gap: 8px;
+}
+
+.star-block img{
+    width: 43px;
+    height: 43px;
+    padding: 5.38px, 3.67px, 5.45px, 5.38px;
+}
+
+.star-block .percentage{
+    width: 118px;
+    height: 43px;
+    font-family: Craftwork Grotesk;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left; 
+}
+
+.row-2 .big-coin{
+    width: 267px;
+    height: 267px;
+    position: absolute;
+    top: 125px;
+    right: -40px;
+    z-index: 2;
+}
+
+.big-coin-shadow{
+    width: 267px;
+    height: 267px;
+    position: absolute;
+    top: 80px;
+    right: 120px;
+    transform: scale(1.9);
+    z-index: 1;
+}
+
+.middle-4_row-4{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 75px;
+}
+
+.middle-4_row-4 button{
+    display: flex;
+    flex-direction: row;
+}

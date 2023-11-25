@@ -1,0 +1,86 @@
+
+/* -------------------------------middle-1------------------------------- */
+
+.middle-1_row-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 165px;
+}
+
+.middle-1_row-1 .dig-trading-block{
+    width: 1590px;
+    height: 221px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #625FF4 0%, #625FF8 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.trading-block-description{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 64px;
+}
+
+.trading-block_title{
+    font-family: Craftwork Grotesk;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.trading-block_under-title{
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 20px; 
+}
+
+/* -------------------------------middle-2------------------------------- */
+
+.middle-2{
+    display: flex;
+    padding: 96px 165px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+
+
+.row-1__title p, .row-1__title p span{
+    font-family: Craftwork Grotesk;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.row-1__title p span{
+    background: linear-gradient(180deg, #625FF4 0%, #625FF8 100%),
+    linear-gradient(0deg, #7a5959, #FFFFFF);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.row-1__under-title p{
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6C7080;
+}

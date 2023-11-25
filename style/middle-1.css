@@ -1,0 +1,118 @@
+
+.middle-1{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.middle-1_column-1 .middle-1_column-2{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-1__title p{
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 115px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.column-1__title p span{
+    color: #625FF8;
+}
+
+.column-1__under-title{
+    font-family: Proxima Nova;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    top: 57px;
+    height: 39px;
+}
+
+/* -------------------------------btn------------------------------- */
+
+.column-1_button, .START-STACKING_btn{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width:446px;
+    height:125px;
+    padding: 48px, 96px, 48px, 96px;
+    border-radius: 8px;
+    gap: 8px;
+    top: 112px;
+    cursor: pointer;
+
+    background: var(--BTN, radial-gradient(50% 50% at 50% 50%, #7673F5 0%, #625FF4 100%));
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -4px 4px 0px rgba(12, 13, 16, 0.25) inset,
+    0px 0px 1px 8px rgba(255, 255, 255, 0.05),
+    0px 0px 128px 0px rgba(98, 95, 244, 0.32);
+
+    transition: background-color 0.6s ease-in-out,
+    box-shadow 0.6s ease-in-out;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* -------------------------------hover_active-btn------------------------------- */
+
+.column-1_button:active, .START-STACKING_btn:active{
+    background: var(--BTN, radial-gradient(50% 50% at 50% 50%, #7673F5 0%, #625FF4 100%));
+    box-shadow: 0px 0px 8px 0px rgba(12, 13, 16, 0.96) inset,
+    0px 0px 1px 8px rgba(255, 255, 255, 0.08),
+    0px 0px 160px 0px rgba(98, 95, 244, 0.48);
+  }
+  
+.column-1_button:hover, .START-STACKING_btn:hover{
+    background: var(--BTN, radial-gradient(50% 50% at 50% 50%, #7673F5 0%, #625FF4 100%));
+    box-shadow: 0px 8px 8px 0px rgba(255, 255, 255, 0.30) inset, 
+    0px -8px 8px 0px rgba(12, 13, 16, 0.30) inset, 
+    0px 0px 1px 8px rgba(255, 255, 255, 0.08), 
+    0px 0px 160px 0px rgba(98, 95, 244, 0.48);
+}
+
+
+.column-1_button p, .START-STACKING_btn{
+    font-family: Craftwork Grotesk;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.middle-1_img{
+    width: 642px;
+    height: 642px;
+    position: relative;
+    top: 66px;
+    left: 45px;
+}
+
+/* -------------------------------media------------------------------- */
+
+@media (max-width: 768px) {
+    .column-1__title p {
+        font-size: 36px; /* Зменшуємо розмір шрифту для мобільних екранів */
+        line-height: 46px; /* Міжрядковий інтервал для мобільних екранів */
+    }
+
+    .column-1__under-title {
+        font-size: 18px; /* Зменшуємо розмір шрифту для мобільних екранів */
+        top: 10px; /* Зменшуємо відступ для мобільних екранів */
+    }
+}

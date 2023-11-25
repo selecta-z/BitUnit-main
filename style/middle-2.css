@@ -1,0 +1,156 @@
+.middle-2{
+    position: relative;
+    top: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.middle-2-column{
+    width: 373px;
+    height: 397px;
+
+
+    border-radius: 8px;
+    border: 1px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, #0C0D10, #0C0D10),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
+    border: 1px solid #FFFFFF1F;
+    transition: .3s;
+}
+
+.middle-2-column:hover{
+    transform: scale(1.03);
+}
+
+.column-n_row-1-2{
+    padding: 32px;
+}
+
+.column-n__row-1, .column-n__row-2, .row-2__column-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.row-1__column-1 img{
+    width: 65px;
+    height: 65px;
+}
+
+.coin-name{
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.column-n__row-1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.column-n__row-2{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    top: 30px;
+}
+
+.column-n__row-3 img{
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.coin-prise{
+    font-family: Craftwork Grotesk;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.coin-percentage{
+    font-family: Craftwork Grotesk;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    left: 4px;
+}
+
+.coin-arrow{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    padding: 5px, 2px, 5px, 2px;
+}
+
+.row-1__column-2{
+
+    align-items: center;
+    padding-left: 12px;
+}
+
+.row-2__column-1 p span{
+    font-family: Craftwork Grotesk;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.12);
+}
+
+.row-2__column-2{
+    align-items: center;
+}
+
+
+
+
+.coin-btn{
+    all: unset;
+    position: relative;
+    top: 4px;
+    width: 50px;
+    height: 24px;
+    border-radius: 3px;
+    gap: 10px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btc-btn, .sol-btn{
+    background: #0ECB7B;
+    box-shadow: 0px 0px 16px 0px #0ECB7B52;
+}
+.eth-btn{
+    background: #E42222;
+    box-shadow: 0px 0px 16px 0px #E4222252;
+}
+
+.bnb-btn{
+    background: linear-gradient(180deg, #625FF4 0%, #625FF8 100%);
+    box-shadow: 0px 0px 16px 0px #625FF452;
+}

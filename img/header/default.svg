@@ -1,0 +1,9 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Vector" d="M0 20C0 8.954 8.954 0 20 0C31.046 0 40 8.954 40 20C40 31.046 31.046 40 20 40C8.954 40 0 31.046 0 20ZM26 20V12H22V30L32 20H26ZM18 10L8 20H14V28H18V10Z" fill="url(#paint0_radial_468_447)"/>
+<defs>
+<radialGradient id="paint0_radial_468_447" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 20) rotate(90) scale(20)">
+<stop stop-color="#7673F5"/>
+<stop offset="1" stop-color="#625FF4"/>
+</radialGradient>
+</defs>
+</svg>

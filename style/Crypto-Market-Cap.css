@@ -1,0 +1,208 @@
+
+.middle-2{
+    
+}
+
+.middle-2_row-1 .Crypto-market-cap{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    padding: 0 162px ;
+}
+
+.Crypto-market_title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Crypto-market_title .title{
+    font-family: Craftwork Grotesk;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.Crypto-market_img{
+    width: 77px;
+    height: 77px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px;
+
+    background: linear-gradient(0deg, #0C0D10, #0C0D10),
+linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
+border: 1px solid #FFFFFF1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Crypto-market_title img{
+    width: 45px;
+    height: 45px;
+    top: 16px;
+    left: 16px;    
+}
+
+.Crypto-market_under-title{
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6C7080;
+    position: relative;
+    top: 30px;
+    text-align: left;
+}
+
+
+
+.middle-2-column{
+    overflow: hidden;
+    width: 373px;
+    height: 224px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 16px;
+    position: relative;
+    top: 32px;
+
+    background: linear-gradient(0deg, #0C0D10, #0C0D10),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
+    border: 1px solid #FFFFFF1F;
+    transition: .3s;
+}
+
+.middle-2-column:hover{
+    transform: scale(1.03);
+}
+
+.column-n_row-1-2{
+    padding: 32px;
+    justify-content: space-between;
+}
+
+.column-n__row-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.column-n__row-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-1__column-1 img{
+    width: 64px;
+    height: 64px;
+    border-radius: 40px;
+    gap: 10px;
+}
+
+.coin-name{
+    font-family: Craftwork Grotesk;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.coin-prise{
+    font-family: Craftwork Grotesk;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.coin-percentage{
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding-left: 5px;
+}
+
+.coin-arrow{
+    position: relative;
+    width: 17px;
+    height: 17px;
+    padding: 3.54px, 1.42px, 3.54px, 1.42px;  
+}
+
+.row-1__column-2{
+    align-items: center;
+    padding-left: 12px;
+}
+
+.row-2__column-1 p span{
+    font-family: Craftwork Grotesk;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.12);
+}
+
+.row-2__column-2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 7.5px;
+}
+
+
+
+
+.coin-btn{
+    all: unset;
+    position: relative;
+    top: 5px;
+
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    width: 81px;
+    height: 24px;
+    padding: 4px, 12px, 3px, 12px;
+    border-radius: 3px;
+    gap: 10px;
+
+    background: linear-gradient(180deg, #625FF4 0%, #625FF8 100%);
+    box-shadow: 0px 0px 16px 0px #625FF452;
+
+}
+
+.middle-2_row-2{
+    padding: 32px 162px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column-n_row-1-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.column-n__row-3{
+    position: relative;
+    top: -20px;
+}

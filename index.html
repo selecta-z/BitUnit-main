@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.cdnfonts.com/css/craftwork-grotesk?styles=140691,140693,140689" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed?styles=53279" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/middle-1.css">
+	<link rel="stylesheet" href="style/middle-2.css">
+	<link rel="stylesheet" href="style/middle-3.css">
+	<link rel="stylesheet" href="style/middle-4.css">
+	<link rel="stylesheet" href="style/middle-5.css">
+	<link rel="stylesheet" href="style/middle-6.css">
+	<link rel="stylesheet" href="style/middle-7.css">
+	<link rel="stylesheet" href="style/menu.css">
+	<link rel="stylesheet" href="style/Crypto-Market-Cap,css.css">
+
+	<!-- шрифти -->
+	<link href="https://fonts.cdnfonts.com/css/craftwork-grotesk" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/proxima-nova" rel="stylesheet">
+
+	<!-- Анімації -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- Підключення jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Підключення Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+	<title>test</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__container">
+				<div class="header__content">
+						<a class="header__logo" href="/">
+						
+								<img src="./img/header/default.svg" alt="logo">
+								<img src="./img/header/BitUnit.svg" alt="BitUnit">
+						
+								<!-- <%
+										out.println("<img src=\"" + request.getAttribute("domain_icon") + "\" alt=\"logo\">");
+								%>
+								<img src="../assets/img/logos/BitUnit.svg" alt="logoName" > -->
+						</a>
+						<nav class="header__menu">
+								<ul class="menu__list text4">
+										<li class="menu__list-item "><a href="">Home</a></li>
+										<li class="menu__list-item "><a href="">Trade</a></li>
+										<li class="trade">
+												<div class="menu__list-item trade" onmouseenter="toggleDropdown(true)" onmouseleave="toggleDropdown(false)">
+														<div class="dropdown__header">Market tools <img src="./img/header/drop-down.png" alt=""></div>
+														<ul class="dropdown__list text3" id="dropdownList">
+																<li class="dropdown__item"><img src="./img/header/cap1.svg" alt=""><a href="#">Crypto Market Cap</a></li>
+																<li class="dropdown__item with__border"><img src="./img/header/market1.svg" alt=""><a href="#">Market Screener</a></li>
+																<li class="dropdown__item"><img src="./img/header/tech1.svg" alt=""><a href="#">Technical Analysis</a></li>
+														</ul>
+												</div>
+										</li>
+										<script>
+												function toggleDropdown(isHovered) {
+														const dropdownList = document.getElementById("dropdownList");
+														dropdownList.classList.toggle("active", isHovered);
+												}
+										</script>
+										<li class="menu__list-item "><a href="" >Buy Crypto</a></li>
+										<li class="menu__list-item "><a href="" >P2P</a></li>
+										<li class="menu__list-item "><a href="" >Staking</a></li>
+										<li class="menu__list-item"><a href="" >Finance</a></li>
+										<li class="menu__list-item "><a href="" >About us</a></li>
+										<!-- <%
+												if (request.getAttribute("authorized") == null) {
+														out.print("<li class=\"menu__list-item menu__list-item-log-in\">\n" +
+																		"                            <a href=\"/signin\">Sing in</a>\n" +
+																		"                        </li>\n" +
+																		"                        <li class=\"menu__list-item menu__list-item-log-in\">\n" +
+																		"                            <a href=\"/signup\">Sign up</a>\n" +
+																		"                        </li>");
+												} else {
+														out.print("<li class=\"menu__list-item menu__list-item-log-in\">\n" +
+																		"                            <a href=\"/profile/wallet\">Profile</a>\n" +
+																		"                        </li>");
+												}
+										%> -->
+								</ul>
+						</nav>
+				</div>
+				<div class="header__sing">
+					<a class="singIn text3">Sing in</a>
+					<button class="singUp_btn text3 btn">Sign up</button>
+				  </div>
+				<!-- <%
+						if (request.getAttribute("authorized") == null) {
+								out.print("<div class=\"header__sing text3\">\n" +
+												"                                    <a class=\"singIn text3\" href=\"/signin\">Sing in</a>\n" +
+												"                                    <a class=\"singUp_btn text3 btn\" href=\"/signup\">Sign up</a>\n" +
+												"                                </div>");
+						} else {
+								out.print("<div class=\"header__sing text3\">\n" +
+												"                                    <a class=\"singUp_btn text3 btn\" href=\"/profile/wallet\">Profile</a>\n" +
+												"                                </div>");
+						}
+				%> -->
+				<div class="burger_menu">
+						<div class="middle"></div>
+				</div>
+		</div>
+	</header>
+	
+	<!-- --------------------------middle-1-------------------------- -->
+
+	<middle-1 class="middle-1" id="middle-1">
+		<div class="middle-1_column-1">
+			<div class="column-1__title" data-aos="fade-up" data-aos-delay="650" data-aos-duration="900" data-aos-once="true">
+				<p class="title-1">The World's<br> Premier Crypto <br>
+					<span class="title-2">
+						Trading Platform
+					</span>
+				</p>
+			</div>
+
+			<div class="column-1__under-title">
+				<p>Join the Rapidly Expanding Global Crypto Exchange</p>
+			</div>
+
+			<button class="column-1_button">
+				<p class="button-1">Start Trading 
+					<span><img src="/img/lightning.png" alt=""></span>
+				</p>
+			</button>
+		</div>
+
+		<div class="middle-1_column-2">
+			<img class="middle-1_img" src="./img/4-d_cube.png">
+		</div>
+	</middle-1>
+
+	<!-- --------------------------middle-2-------------------------- -->
+
+	<middle-2 class="middle-2" id="middle-2">
+
+		<div class="middle-2_column-1 middle-2-column">
+			<div class="column-1_row-1-2 column-n_row-1-2">
+				<div class="column-1__row-1 column-n__row-1">
+					<div class="row-1__column-1">
+						<img class="coin-img" src="./img/middle-2/Coin.png" alt="">
+					</div>
+
+					<div class="row-1__column-2">
+						<p class="coin-name">Bitcoin</p>
+						<button class="btc-btn coin-btn">BTC</button>
+					</div>
+				</div>
+
+				<div class="column-1__row-2 column-n__row-2">
+					<div class="row-2__column-1">
+						<p class="coin-prise">$38,447</p>
+					</div>
+					
+					<div class="row-2__column-2">
+						<img class="coin-arrow" src="./img/middle-2/arrow-green.png" alt="">
+						<p class="coin-percentage">+2.22%</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="column-1__row-3 column-n__row-3">
+				<img class="coin-vector" src="../img/middle-2/vector-1.png" alt="">
+			</div>
+		</div>
+
+		<div class="middle-2_column-2 middle-2-column">
+			<div class="column-2_row-1-2 column-n_row-1-2">
+				<div class="column-2__row-1 column-n__row-1">
+					<div class="row-1__column-1">
+						<img class="coin-img" src="./img/middle-2/Coin (1).png" alt="">
+					</div>
+
+					<div class="row-1__column-2">
+						<p class="coin-name">Ethereum</p>
+						<button class="eth-btn coin-btn">ETH</button>
+					</div>
+				</div>
+
+				<div class="column-2__row-2 column-n__row-2">
+					<div class="row-2__column-1">
+						<p class="coin-prise">$2096</p>
+					</div>
+					
+					<div class="row-2__column-2">
+						<img class="coin-arrow" src="./img/middle-2/arrow-red.png" alt="">
+						<p class="coin-percentage">-4.2%</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="column-2__row-3 column-n__row-3">
+				<img class="coin-vector" src="./img/middle-2/vector-2.png" alt="">
+			</div>
+		</div>
+
+		<div class="middle-2_column-3 middle-2-column">
+			<div class="column-3_row-1-2 column-n_row-1-2">
+				<div class="column-3__row-1 column-n__row-1">
+					<div class="row-1__column-1">
+						<img class="coin-img" src="./img/middle-2/Coin (3).png" alt="">
+					</div>
+
+					<div class="row-1__column-2">
+						<p class="coin-name">Solana</p>
+						<button class="sol-btn coin-btn">SOL</button>
+					</div>
+				</div>
+
+				<div class="column-3__row-2 column-n__row-2">
+					<div class="row-2__column-1">
+						<p class="coin-prise">$56<span>.62</span></p>
+					</div>
+					
+					<div class="row-2__column-2">
+						<img class="coin-arrow" src="./img/middle-2/arrow-green.png" alt="">
+						<p class="coin-percentage">+3.54%</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="column-3__row-3 column-n__row-3">
+				<img class="coin-vector" src="./img/middle-2/vector-3.png" alt="">
+			</div>
+		</div>
+
+		<div class="middle-2_column-4 middle-2-column">
+			<div class="column-4_row-1-2 column-n_row-1-2">
+				<div class="column-4__row-1 column-n__row-1">
+					<div class="row-1__column-1">
+						<img class="coin-img" src="./img/middle-2/Coin (4).png" alt="">
+					</div>
+
+					<div class="row-1__column-2">
+						<p class="coin-name">BNB</p>
+						<button class="bnb-btn coin-btn">BNB</button>
+					</div>
+				</div>
+
+				<div class="column-4__row-2 column-n__row-2">
+					<div class="row-2__column-1">
+						<p class="coin-prise">$251</p>
+					</div>
+					
+					<div class="row-2__column-2">
+						<img class="coin-arrow" src="./img/middle-2/arrow-purple.png" alt="">
+						<p class="coin-percentage">+0%</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="column-4__row-3 column-n__row-3">
+				<img class="coin-vector" src="./img/middle-2/vector-4.png" alt="">
+			</div>
+		</div>
+
+	</middle-2>
+
+	<!-- --------------------------middle-3-------------------------- -->
+
+	<middle-3 class="middle-3" id="middle-3">
+		<div class="middle-3_row-1">
+			<div class="row-1__title">
+				<p class="title-1">Unrivaled Exchange <span>Metrics</span> </p>
+			</div>
+
+			<div class="row-1__under-title">
+				<p>Trade confidently on our robust cryptocurrency exchange with 25,000+ deals, $3M+<br> 
+					volume, and 50,000+ users. Stable platform, 5%+ volatility. Elevate your trading.</p>
+			</div>
+		</div>
+
+		<div class="middle-3_row-2">
+			<div class="column-1 column" data-aos="fade-up" data-aos-delay="350" data-aos-duration="900" data-aos-once="true">
+				<div class="column-1_row-1 column-n_row-2">
+					<img src="./img/middle-3/Frame 1396.png" alt="">
+					<p class="title">Users</p>
+				</div>
+
+				<div class="column-1_row-1">
+					<p class="value">50k+</p>
+				</div>
+			</div>
+
+
+			<div class="column-2 column" data-aos="fade-up" data-aos-delay="650" data-aos-duration="900" data-aos-once="true">
+				<div class="column-2_row-1 column-n_row-2">
+					<img src="./img/middle-3/Frame 1396 (1).png" alt="">
+					<p class="title">Deals</p>
+				</div>
+
+				<div class="column-1_row-1">
+					<p class="value">25k+</p>
+				</div>
+			</div>
+
+
+			<div class="column-3 column" data-aos="fade-up" data-aos-delay="950" data-aos-duration="900" data-aos-once="true">
+				<div class="column-3_row-1 column-n_row-2">
+					<img src="./img/middle-3/Frame 1396 (2).png" alt="">
+					<p class="title">Volatility</p>
+				</div>
+
+				<div class="column-1_row-1">
+					<p class="value">5%+</p>
+				</div>
+			</div>
+
+
+			<div class="column-4 column" data-aos="fade-up" data-aos-delay="1250" data-aos-duration="900" data-aos-once="true">
+				<div class="column-4_row-1 column-n_row-2">
+					<img src="./img/middle-3/Frame 1396 (3).png" alt="">
+					<p class="title">Trading volume</p>
+				</div>
+
+				<div class="column-1_row-1">
+					<p class="value">$3M+</p>
+				</div>
+			</div>
+		</div>
+	</middle-3>
+
+	<!-- --------------------------middle-4-------------------------- -->
+
+	<middle-4 class="middle-4" id="middle-4">
+		<div class="middle-4_row-1">
+			<div class="row-1__title">
+				<p class="title-1">Highest APRs,<br> <span>Zero Loss</span> Concerns!</p>
+			</div>
+
+			<div class="row-1__under-title">
+				<p>Maximize Gains with Top APRs and Zero Loss Worries!</p>
+			</div>
+
+		</div>
+
+		<div class="middle-4_row-2">
+			<div class="crypto-block-1 crypto-block">
+				<div class="row-1">
+					<p class="currency-name">ETH</p>
+
+					<!-- <img src="./img/middle-4/double-purple-arrow.png" alt=""> -->
+
+					<p class="currency-name-2">Total locked: 8M</p>
+				</div>
+
+				<div class="row-2">
+					<div class="star-block">
+						<img class="star" src="./img/middle-4/purple-star.png" alt="">
+						<p class="percentage">7.80%</p>
+					</div>
+
+					<img class="big-coin big-coin-eth" src="./img/middle-4/ethereum-9828478-7947840.png" alt="">
+					<img class="big-coin-shadow" src="./img/middle-4/tron-9828545-7947907 4.png" alt="">
+				</div>
+			</div>
+
+
+			<div class="crypto-block-2 crypto-block">
+				<div class="row-1">
+					<p class="currency-name">SOL</p>
+
+					<!-- <img src="./img/middle-4/double-purple-arrow.png" alt=""> -->
+
+					<p class="currency-name-2">Total locked: 8M</p>
+				</div>
+
+				<div class="row-2">
+					<div class="star-block">
+						<img class="star" src="./img/middle-4/purple-star.png" alt="">
+						<p class="percentage">7.80%</p>
+					</div>
+
+					<img class="big-coin big-coin-sol" src="./img/middle-4/solana-9828531-7947893.png" alt="">
+					<img class="big-coin-shadow" src="./img/middle-4/tron-9828545-7947907 4 (1).png" alt="">
+				</div>
+			</div>
+
+
+			<div class="crypto-block-3 crypto-block">
+				<div class="row-1">
+					<p class="currency-name">TRX</p>
+
+					<!-- <img src="./img/middle-4/double-purple-arrow.png" alt=""> -->
+
+					<p class="currency-name-2">Total locked: 8M</p>
+				</div>
+
+				<div class="row-2">
+					<div class="star-block">
+						<img class="star" src="./img/middle-4/purple-star.png" alt="">
+						<p class="percentage">7.80%</p>
+					</div>
+
+					<img class="big-coin big-coin-trx" src="./img/middle-4/tron-9828545-7947907.png" alt="">
+					<img class="big-coin-shadow" src="./img/middle-4/tron-9828545-7947907 4 (2).png" alt="">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="middle-4_row-3">
+			<div class="crypto-block-4 crypto-block">
+				<div class="row-1">
+					<p class="currency-name">BTC</p>
+
+					<!-- <img src="./img/middle-4/double-purple-arrow.png" alt=""> -->
+
+					<p class="currency-name-2">Total locked: 8M</p>
+				</div>
+
+				<div class="row-2">
+					<div class="star-block">
+						<img class="star" src="./img/middle-4/purple-star.png" alt="">
+						<p class="percentage">7.80%</p>
+					</div>
+
+					<img class="big-coin big-coin-btc" src="./img/middle-4/bitcoin-9828488-7947850.png" alt="">
+					<img class="big-coin-shadow" src="./img/middle-4/tron-9828545-7947907 4 (3).png" alt="">
+				</div>
+			</div>
+
+
+			<div class="crypto-block-5 crypto-block">
+				<div class="row-1">
+					<p class="currency-name">USDT</p>
+
+					<!-- <img src="./img/middle-4/double-purple-arrow.png" alt=""> -->
+
+					<p class="currency-name-2">Total locked: 8M</p>
+				</div>
+
+				<div class="row-2">
+					<div class="star-block">
+						<img class="star" src="./img/middle-4/purple-star.png" alt="">
+						<p class="percentage">7.80%</p>
+					</div>
+
+					<img class="big-coin big-coin-usdt" src="./img//middle-4/tether-9828530-7947892.png" alt="">
+					<img class="big-coin-shadow" src="./img/middle-4/tron-9828545-7947907 4 (4).png" alt="">
+				</div>
+			</div>
+
+
+			<div class="crypto-block-6 crypto-block">
+				<div class="row-1">
+					<p class="currency-name">FTM</p>
+
+					<!-- <img src="./img/middle-4/double-purple-arrow.png" alt=""> -->
+
+					<p class="currency-name-2">Total locked: 8M</p>
+				</div>
+
+				<div class="row-2">
+					<div class="star-block">
+						<img class="star" src="./img/middle-4/purple-star.png" alt="">
+						<p class="percentage">7.80%</p>
+					</div>
+
+					<img class="big-coin big-coin-phm" src="./img/middle-4/fantom-9828489-7947851.png" alt="">
+					<img class="big-coin-shadow" src="./img/middle-4/tron-9828545-7947907 4 (5).png" alt="">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="middle-4_row-4">
+			<button class="START-STACKING_btn text3">START STACKING <img src="./img/middle-4/Mask.png" alt=""></button>
+		</div>
+	</middle-4>
+
+	<!-- --------------------------middle-5-------------------------- -->
+
+	<middle-5 class="middle-5" id="middle-5">
+		<div class="middle-5_row-1">
+			<p class="markets">Markets</p>
+			<div class="all-markets-btn">
+				<p>More questions</p>
+				<img src="./img/middle-7/more-info-arrow.png" alt="">
+			</div>
+		</div>
+
+		<div class="middle-5_row-2">
+			<div class="markets-column-1">
+				<p class="token markets-column-title">Token</p>
+
+				<div class="token-info">
+					<div class="token-icon"><img src="./img/middle-5/Property 1=BTC.png" alt=""></div>
+					<div class="token-name">Bitcoin</div>
+					<button class="token-btn">BTC</button>
+				</div>
+
+				<div class="token-info">
+					<div class="token-icon"><img src="./img/middle-5/Property 1=ETH.png" alt=""></div>
+					<div class="token-name">Etereum</div>
+					<button class="token-btn">ETH</button>
+				</div>
+
+				<div class="token-info">
+					<div class="token-icon"><img src="./img/middle-5/Property 1=XRP.png" alt=""></div>
+					<div class="token-name">XRP</div>
+					<button class="token-btn">XRP</button>
+				</div>
+
+				<div class="token-info">
+					<div class="token-icon"><img src="./img/middle-5/Property 1=BNB.png" alt=""></div>
+					<div class="token-name">BNB</div>
+					<button class="token-btn">BNB</button>
+				</div>
+
+				<div class="token-info">
+					<div class="token-icon"><img src="./img/middle-5/Property 1=SOL.png" alt=""></div>
+					<div class="token-name">Solana</div>
+					<button class="token-btn">SOL</button>
+				</div>
+
+				<div class="token-info">
+					<div class="token-icon"><img src="./img/middle-5/Property 1=Polygon.png" alt=""></div>
+					<div class="token-name">Polygon</div>
+					<button class="token-btn">MATIC</button>
+				</div>
+			</div>
+
+			<div class="market-gorizontal-line-1 market-gorizontal-line"></div>
+			<div class="market-gorizontal-line-2 market-gorizontal-line"></div>
+			<div class="market-gorizontal-line-3 market-gorizontal-line"></div>
+			<div class="market-gorizontal-line-4 market-gorizontal-line"></div>
+			<div class="market-gorizontal-line-5 market-gorizontal-line"></div>
+			<div class="market-gorizontal-line-6 market-gorizontal-line"></div>
+			<div class="market-gorizontal-line-7 market-gorizontal-line"></div>
+			<div class="market-gorizontal-line-8 market-gorizontal-line"></div>
+
+			<div class="markets-column-2">
+				<p class="last-prise markets-column-title">Last Prise (USDT)</p>
+				<div class="last-prise-info">
+					<p>$43,975.72</p>
+				</div>
+
+				<div class="last-prise-info">
+					<p>$4,307.18</p>
+				</div>
+
+				<div class="last-prise-info">
+					<p>$1.25</p>
+				</div>
+
+				<div class="last-prise-info">
+					<p>$607.94</p>
+				</div>
+
+				<div class="last-prise-info">
+					<p>$209.36</p>
+				</div>
+
+				<div class="last-prise-info">
+					<p>$1.98</p>
+				</div>
+			</div>
+
+			<div class="markets-column-3">
+				<p class="_24h-pursantage markets-column-title">24h%</p>
+
+				<div class="_24h-pursantage-info">
+					<img src="./img/middle-5/arrow-green.png" alt="">
+					<p>+2.5%</p>
+				</div>
+
+				<div class="_24h-pursantage-info">
+					<img src="./img/middle-5/arrow-red.png" alt="">
+					<p>-18.05%</p>
+				</div>
+
+				<div class="_24h-pursantage-info">
+					<img src="./img/middle-5/arrow-purple.png" alt="">
+					<p>0%</p>
+				</div>
+
+				<div class="_24h-pursantage-info">
+					<img src="./img/middle-5/arrow-green.png" alt="">
+					<p>+16.66%</p>
+				</div>
+
+				<div class="_24h-pursantage-info">
+					<img src="./img/middle-5/arrow-green.png" alt="">
+					<p>+1.35%</p>
+				</div>
+
+				<div class="_24h-pursantage-info">
+					<img src="./img/middle-5/arrow-red.png" alt="">
+					<p>-0.0005%</p>
+				</div>
+			</div>
+
+			<div class="markets-column-4">
+				<p class="_24h-vol markets-column-title">24h Vol</p>
+				<div class="_24h-vol-info">
+					<p>92.6M</p>
+				</div>
+
+				<div class="_24h-vol-info">
+					<p>76.2B</p>
+				</div>
+
+				<div class="_24h-vol-info">
+					<p>12.4B</p>
+				</div>
+
+				<div class="_24h-vol-info">
+					<p>18.7B</p>
+				</div>
+
+				<div class="_24h-vol-info">
+					<p>5.3B</p>
+				</div>
+
+				<div class="_24h-vol-info">
+					<p>1.2B</p>
+				</div>
+			</div>
+
+			<div class="markets-column-5">
+				<p class="graphs markets-column-title">Markest</p>
+				<div class="graphs-info">
+					<img src="./img/middle-5/graph-green.png" alt="">
+				</div>
+
+				<div class="graphs-info">
+					<img src="./img/middle-5/graph-red.png" alt="">
+				</div>
+
+				<div class="graphs-info">
+					<img src="./img/middle-5/graph-purple.png" alt="">
+				</div>
+
+				<div class="graphs-info">
+					<img src="./img/middle-5/graph-green.png" alt="">
+				</div>
+
+				<div class="graphs-info">
+					<img src="./img/middle-5/graph-green.png" alt="">
+				</div>
+
+				<div class="graphs-info">
+					<img src="./img/middle-5/graph-red.png" alt="">
+				</div>
+			</div>
+		</div>
+	</middle-5>
+
+	<!-- --------------------------middle-6-------------------------- -->
+
+	<middle-6 class="middle-6" id="middle-6">
+		<div class="middle-6_row-1">
+			<div class="row-1__title">
+				<p class="title-1">Powerful Crypto <span>Collaborations</span></p>
+			</div>
+
+			<div class="row-1__under-title">
+				<p>Powering Progress Together: Explore Our Dynamic Network of Strategic Alliances<br> and 
+					Collaborations in the Crypto World.</p>
+			</div>
+		</div>
+
+		<div class="middle-6_row-2">
+			<div class="scrolling-container">
+				<section class="scrolling-content">
+					<img class="sponsor-1 black-and-white-image" src="./img/middle-6/sponsor-1.svg" alt="">
+					<img class="sponsor-2 black-and-white-image" src="./img/middle-6/sponsor-2.svg" alt="">
+					<img class="sponsor-3 black-and-white-image" src="./img/middle-6/sponsor-3.svg" alt="">
+					<img class="sponsor-4 black-and-white-image" src="./img/middle-6/sponsor-4.svg" alt="">
+					<img class="sponsor-5 black-and-white-image" src="./img/middle-6/sponsor-5.svg" alt="">
+				</section>
+			</div>
+		</div>
+
+		<div class="middle-6_row-3">
+			<img class="pill" src="./img/middle-6/pill.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+			<div class="pill-info">
+				<p class="pill-title"><span>Elevate</span> Your Crypto Experience <span>With BitUnit</span></p>
+				<div class="pill-description">Dive into the dynamic world of cryptocurrency trading with BitUnit—a platform 
+					crafted for the modern investor. Our user-centric design and cutting-edge technology empower you to 
+					navigate the crypto sphere seamlessly.<br><br>
+
+					Join us on this exciting journey, where innovation meets opportunity, and your financial aspirations 
+					find their perfect match. Welcome to BitUnit, where the future of crypto unfolds at your fingertips.</div>
+			</div>
+		</div>
+	</middle-6>
+
+	<!-- --------------------------middle-7-------------------------- -->
+
+	<middle-7 class="middle-7" id="middle-7">
+		<div class="middle-7_row-1">
+			<div class="FAQ">
+				<p class="FAQ-title" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true"><span>F</span>requently <span>A</span>sked <span>Q</span>uestions</p>
+				<p class="FAQ-under-title" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">Explore Common Queries and Find Quick Solutions in Our FAQ Section.</p>
+			</div>
+
+			<div class="more-questions all-markets-btn">
+				<p>More questions</p>
+				<img src="./img/middle-7/more-info-arrow.png" alt="">
+			</div>
+
+		</div>
+
+		<div class="middle-7_row-2">
+			<div class="faq-container">
+
+				<div class="question" id="question1" onclick="toggleAnswer(1)">
+					<div class="question-block">
+						<span id="faq_ans1">How do I create an account on BitUnit?</span>
+						<div class="answer" id="answer1">
+							<p>To create an account on BitUnit, go to our website, click 'Register,' 
+								and follow the simple on-screen instructions to get started.</p>
+						</div>
+					</div>
+					<span id="plus1" class="plus">+</span>
+				</div>
+			
+				<div class="question" id="question2" onclick="toggleAnswer(2)">
+					<div class="question-block">
+						<span id="faq_ans2">What cryptocurrencies can I trade on BitUnit?</span>
+						<div class="answer" id="answer2">
+							<p>BitUnit offers a wide range of cryptocurrencies, including 
+								Bitcoin (BTC), Ethereum (ETH), Ripple (X).</p>
+						</div>
+					</div>
+					<span id="plus2" class="plus">+</span>
+				</div>
+
+				<div class="question" id="question3" onclick="toggleAnswer(3)">
+					<div class="question-block">
+						<span id="faq_ans3">How can I secure my BitUnit account?</span>
+						<div class="answer" id="answer3">
+							<p>Protect your BitUnit account by enabling two-factor 
+								authentication (2FA) and using a strong, unique password.</p>
+						</div>
+					</div>
+					<span id="plus3" class="plus">+</span>
+				</div>
+
+				<div class="question" id="question4" onclick="toggleAnswer(4)">
+					<div class="question-block">
+						<span id="faq_ans4">What are the trading fees on BitUnit?</span>
+						<div class="answer" id="answer4">
+							<p>Our trading fees vary based on your trading volume. You can find 
+								detailed fee information in our fee schedule on our website.</p>
+						</div>
+					</div>
+					<span id="plus4" class="plus">+</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="middle-7_row-3">
+			<div class="dig-trading-block">
+				<div class="trading-block-description">
+					<p class="trading-block_title">Your Gateway to Crypto Wealth</p>
+					<p class="trading-block_under-title">Unlock the Future of Finance with BitUnit</p>
+				</div>
+				
+				<button class="trading-block-btn">
+					<p class="">Start Trading</p>
+					<img src="/img/lightning-3.png" alt="">
+				</button>
+
+				<span class="trading-insert_1"><img src="./img/middle-7/insert-1.png" alt=""></span>
+
+				<span class="trading-insert_3"><img src="./img/middle-7/insert-3.png" alt=""></span>
+			</div>
+			<span class="trading-insert_2"><img src="./img/middle-7/insert-2.png" alt=""></span>
+		</div>
+				
+	</middle-7>
+
+	<!-- --------------------------main-figures_&_shadows-------------------------- -->
+
+	<img class="main-shadow-01 main-shadow_or_img" src="./img/main-shadow-1.png" alt="">
+	<img class="main-shadow-02 main-shadow_or_img" src="./img/main-shadow-1.png" alt="">
+
+
+	<img class="main-shadow-1 main-shadow_or_img" src="./img/main-shadow-1.png" alt="">
+
+
+	<img class="main-figure-1 main-shadow_or_img" src="./img/main-figure-1.png" alt="">
+	<img class="main-shadow-2 main-shadow_or_img" src="./img/main-shadow-2.png" alt="">
+
+
+	<img class="main-figure-2 main-shadow_or_img" src="./img/main-figure-2.png" alt="">
+	<img class="main-shadow-3 main-shadow_or_img" src="./img/main-shadow-3.png" alt="">
+
+
+	<img class="main-figure-3 main-shadow_or_img" src="./img/main-figure-3.png" alt="">
+	<img class="main-shadow-4 main-shadow_or_img" src="./img/main-shadow-4.png" alt="">
+
+
+	<img class="main-figure-4 main-shadow_or_img" src="./img/main-figure-4.png" alt="">
+	<img class="main-shadow-5 main-shadow_or_img" src="./img/main-shadow-5.png" alt="">
+
+
+	<img class="main-figure-5 main-shadow_or_img" src="./img/main-figure-5.png" alt="">
+	<img class="main-shadow-6 main-shadow_or_img" src="./img/main-shadow-6.png" alt="">
+
+
+	<img class="main-figure-6 main-shadow_or_img" src="./img/main-figure-6.png" alt="">
+	<img class="main-shadow-7 main-shadow_or_img" src="./img/main-shadow-7.png" alt="">
+
+
+	<img class="main-shadow-8 main-shadow_or_img" src="./img/main-shadow-8.png" alt="">
+
+	<!-- --------------------------script`s-------------------------- -->
+
+	<script src="./script.js"></script>
+
+	<script>
+		AOS.init();
+	</script>
+</body>
+</html>
